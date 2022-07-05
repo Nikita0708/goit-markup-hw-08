@@ -14,8 +14,12 @@
 }
 .portfolio-list {
   display: flex;
-  justify-content: center;
+  justify-content: left;
   margin-bottom: 50px;
+  flex-wrap: wrap;
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+  }
 }
 .portfolio-item-btn {
   background-color: var(--second-background);
@@ -47,4 +51,8 @@
 li .all {
   color: var(--white-color);
   background-color: var(--hover-color);
+  margin-bottom: 12px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+  }
 }

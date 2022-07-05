@@ -26,10 +26,10 @@
     <title>WebStudio</title>
   </head>
   <body>
-    <!-- <header class="header">
+    <header class="header">
       <div class="container">
+        <a href="./index.html" class="header-logo"><span>Web</span>Studio</a>
         <nav class="header-nav">
-          <a href="./index.html" class="header-logo"><span>Web</span>Studio</a>
           <ul class="header-list">
             <li class="header-item"><a href="" class="header-link studio">Студия</a></li>
             <li class="header-item">
@@ -38,12 +38,12 @@
             <li class="header-item"><a href="" class="header-link">Контакты</a></li>
           </ul>
         </nav>
-        <ul class="header-list header-contacts">
+        <ul class="header-contacts">
           <li class="item-contacts">
             <a href="mailto:info@devstudio.com" class="link-contacts">
               <svg class="header-icon" width="16" height="12">
                 <use href="./images/sprite.svg#icon-envelope"></use></svg
-              >@devstudio.com</a
+              >info@devstudio.com</a
             >
           </li>
           <li class="item-contacts">
@@ -54,14 +54,47 @@
             >
           </li>
         </ul>
+        <button type="button" class="menu-open-btn">
+          <svg class="menu-icon" width="40" height="40">
+            <use href="./images/sprite.svg#icon-menu-open"></use>
+          </svg>
+        </button>
       </div>
-    </header> -->
+      <div class="mob-menu is-hidden">
+        <div class="container">
+          <button type="button" class="menu-close-btn">
+            <svg class="menu-icon" width="18" height="18">
+              <use href="./images/sprite.svg#icon-close-modal"></use>
+            </svg>
+          </button>
+          <ul class="mob-menu-list">
+            <li class="mob-menu-item"><a href="" class="mob-menu-link mob-studio">Студия</a></li>
+            <li class="mob-menu-item"><a href="" class="mob-menu-link">Портфолио</a></li>
+            <li class="mob-menu-item"><a href="" class="mob-menu-link">Контакты</a></li>
+          </ul>
+          <ul class="mob-contacts-list">
+            <li class="mob-contacts-item">
+              <a href="" class="mob-contacts-tel">+38 096 111 11 11</a>
+            </li>
+            <li class="mob-contacts-item">
+              <a href="" class="mob-contacts-email">info@devstudio.com</a>
+            </li>
+          </ul>
+          <ul class="mob-soc-list">
+            <li class="mob-soc-item"><a href="" class="mob-soc-link">Instagram</a></li>
+            <li class="mob-soc-item"><a href="" class="mob-soc-link">Twitter</a></li>
+            <li class="mob-soc-item"><a href="" class="mob-soc-link">Facebook</a></li>
+            <li class="mob-soc-item"><a href="" class="mob-soc-link">LinkedIn</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
     <main>
-      <!-- <section class="hero">
+      <section class="hero">
         <div class="container">
           <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
           <button type="button" class="hero-btn" data-modal-open>Заказать услугу</button>
-        </div> -->
+        </div>
       </section>
       <section class="pref">
         <div class="container">
@@ -114,31 +147,54 @@
           </ul>
         </div>
       </section>
-      <!-- <section class="work section">
+      <section class="work">
         <div class="container">
           <h2 class="work__title">Чем мы занимаемся</h2>
           <ul class="work__list">
             <li class="work__item">
-              <img src="./images/1.jpg" alt="картинка 1" width="370" />
+              <img
+                srcset="./images/product/box1.jpg 1x, ./images/product/box1-2x.jpg 2x"
+                src="./images/product/box1.jpg"
+                alt="картинка 1"
+                width="370"
+              />
               <p class="work__item-text">Десктопные приложения</p>
             </li>
             <li class="work__item">
-              <img src="./images/2.jpg" alt="картинка 2" width="370" />
+              <img
+                srcset="./images/product/box2.jpg 1x, ./images/product/box2-2x.jpg 2x"
+                src="./images/product/box2.jpg"
+                alt="картинка 2"
+                width="370"
+              />
               <p class="work__item-text">Мобильные приложения</p>
             </li>
             <li class="work__item">
-              <img src="./images/3.jpg" alt="картинка 3" width="370" />
+              <img
+                srcset="./images/product/box3.jpg 1x, ./images/product/box3-2x.jpg 2x"
+                src="./images/product/box3.jpg"
+                alt="картинка 3"
+                width="370"
+              />
               <p class="work__item-text">Дизайнерские решения</p>
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <section class="team">
         <div class="container">
           <h2 class="team__title">Наша команда</h2>
           <ul class="team__list">
             <li class="team__item">
-              <img src="./images/p1.jpg" alt="работник1" width="450" />
+              <img
+                srcset="
+                  ./images/team/team-mobile/t-mob-1.jpg    1x,
+                  ./images/team/team-mobile/t-mob-1-2x.jpg 2x
+                "
+                src="./images/team/team-mobile/t-mob-1.jpg"
+                alt="работник1"
+                width="450"
+              />
               <div class="team__item-wrap">
                 <h3 class="team__worker">Игорь Демьяненко</h3>
                 <p class="team__text">Product Designer</p>
@@ -175,7 +231,15 @@
               </div>
             </li>
             <li class="team__item">
-              <img src="./images/p2.jpg" alt="работник2" width="450" />
+              <img
+                srcset="
+                  ./images/team/team-mobile/t-mob-2.jpg    1x,
+                  ./images/team/team-mobile/t-mob-2-2x.jpg 2x
+                "
+                src="./images/team/team-mobile/t-mob-2.jpg"
+                alt="работник2"
+                width="450"
+              />
               <div class="team__item-wrap">
                 <h3 class="team__worker">Ольга Репина</h3>
                 <p class="team__text">Frontend Developer</p>
@@ -213,7 +277,15 @@
               </div>
             </li>
             <li class="team__item">
-              <img src="./images/p3.jpg" alt="работник3" width="450" />
+              <img
+                srcset="
+                  ./images/team/team-mobile/t-mob-3.jpg    1x,
+                  ./images/team/team-mobile/t-mob-3-2x.jpg 2x
+                "
+                src="./images/team/team-mobile/t-mob-3.jpg"
+                alt="работник3"
+                width="450"
+              />
               <div class="team__item-wrap">
                 <h3 class="team__worker">Николай Тарасов</h3>
                 <p class="team__text">Marketing</p>
@@ -251,7 +323,15 @@
               </div>
             </li>
             <li class="team__item">
-              <img src="./images/p4.jpg" alt="работник4" width="450" />
+              <img
+                srcset="
+                  ./images/team/team-mobile/t-mob-4.jpg    1x,
+                  ./images/team/team-mobile/t-mob-4-2x.jpg 2x
+                "
+                src="./images/team/team-mobile/t-mob-4.jpg"
+                alt="работник4"
+                width="450"
+              />
               <div class="team__item-wrap">
                 <h3 class="team__worker">Михаил Ермаков</h3>
                 <p class="team__text">UI Designer</p>
@@ -341,7 +421,7 @@
         </div>
       </section>
     </main>
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="container">
         <div class="footer-address">
           <a href="./index.html" class="footer-logo"><span>Web</span>Studio</a>
@@ -411,7 +491,7 @@
           </form>
         </div>
       </div>
-    </footer> -->
+    </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-close-btn" data-modal-close>
@@ -490,5 +570,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
