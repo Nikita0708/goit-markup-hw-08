@@ -69,7 +69,9 @@
           </button>
           <ul class="mob-menu-list">
             <li class="mob-menu-item"><a href="" class="mob-menu-link mob-studio">Студия</a></li>
-            <li class="mob-menu-item"><a href="" class="mob-menu-link">Портфолио</a></li>
+            <li class="mob-menu-item">
+              <a href=" ../goit-markup-hw-08/portfolio.html" class="mob-menu-link">Портфолио</a>
+            </li>
             <li class="mob-menu-item"><a href="" class="mob-menu-link">Контакты</a></li>
           </ul>
           <ul class="mob-contacts-list">
@@ -186,15 +188,26 @@
           <h2 class="team__title">Наша команда</h2>
           <ul class="team__list">
             <li class="team__item">
-              <img
-                srcset="
-                  ./images/team/team-mobile/t-mob-1.jpg    1x,
-                  ./images/team/team-mobile/t-mob-1-2x.jpg 2x
-                "
-                src="./images/team/team-mobile/t-mob-1.jpg"
-                alt="работник1"
-                width="450"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/team/team/team-1.jpg 1x, ./images/team/team/team-1-2x.jpg 2x"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/team/team-tablet/t-tabl-1.jpg    1x,
+                    ./images/team/team-tablet/t-tabl-1-2x.jpg 2x
+                  "
+                />
+                <img
+                  srcset="
+                    ./images/team/team-mobile/t-mob-1.jpg    1x,
+                    ./images/team/team-mobile/t-mob-1-2x.jpg 2x
+                  "
+                  alt="Игорь Демьяненко"
+                />
+              </picture>
               <div class="team__item-wrap">
                 <h3 class="team__worker">Игорь Демьяненко</h3>
                 <p class="team__text">Product Designer</p>
@@ -231,15 +244,26 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                srcset="
-                  ./images/team/team-mobile/t-mob-2.jpg    1x,
-                  ./images/team/team-mobile/t-mob-2-2x.jpg 2x
-                "
-                src="./images/team/team-mobile/t-mob-2.jpg"
-                alt="работник2"
-                width="450"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/team/team/team-2.jpg 1x, ./images/team/team/team-2-2x.jpg 2x"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/team/team-tablet/t-tabl-2.jpg    1x,
+                    ./images/team/team-tablet/t-tabl-2-2x.jpg 2x
+                  "
+                />
+                <img
+                  srcset="
+                    ./images/team/team-mobile/t-mob-2.jpg    1x,
+                    ./images/team/team-mobile/t-mob-2-2x.jpg 2x
+                  "
+                  alt="Ольга Репина"
+                />
+              </picture>
               <div class="team__item-wrap">
                 <h3 class="team__worker">Ольга Репина</h3>
                 <p class="team__text">Frontend Developer</p>
@@ -277,15 +301,26 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                srcset="
-                  ./images/team/team-mobile/t-mob-3.jpg    1x,
-                  ./images/team/team-mobile/t-mob-3-2x.jpg 2x
-                "
-                src="./images/team/team-mobile/t-mob-3.jpg"
-                alt="работник3"
-                width="450"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/team/team/team-3.jpg 1x, ./images/team/team/team-3-2x.jpg 2x"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/team/team-tablet/t-tabl-3.jpg    1x,
+                    ./images/team/team-tablet/t-tabl-3-2x.jpg 2x
+                  "
+                />
+                <img
+                  srcset="
+                    ./images/team/team-mobile/t-mob-3.jpg    1x,
+                    ./images/team/team-mobile/t-mob-3-2x.jpg 2x
+                  "
+                  alt="Николай Тарасов"
+                />
+              </picture>
               <div class="team__item-wrap">
                 <h3 class="team__worker">Николай Тарасов</h3>
                 <p class="team__text">Marketing</p>
@@ -323,15 +358,26 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                srcset="
-                  ./images/team/team-mobile/t-mob-4.jpg    1x,
-                  ./images/team/team-mobile/t-mob-4-2x.jpg 2x
-                "
-                src="./images/team/team-mobile/t-mob-4.jpg"
-                alt="работник4"
-                width="450"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/team/team/team-4.jpg 1x, ./images/team/team/team-4-2x.jpg 2x"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/team/team-tablet/t-tabl-4.jpg    1x,
+                    ./images/team/team-tablet/t-tabl-4-2x.jpg 2x
+                  "
+                />
+                <img
+                  srcset="
+                    ./images/team/team-mobile/t-mob-4.jpg    1x,
+                    ./images/team/team-mobile/t-mob-4-2x.jpg 2x
+                  "
+                  alt="Михаил Ермаков"
+                />
+              </picture>
               <div class="team__item-wrap">
                 <h3 class="team__worker">Михаил Ермаков</h3>
                 <p class="team__text">UI Designer</p>

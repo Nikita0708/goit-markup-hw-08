@@ -20,7 +20,6 @@
   color: var(--default-color);
   font-weight: 700;
   line-height: 1.17;
-  margin-right: 276px;
 
   span {
     color: var(--hover-color);
@@ -38,10 +37,12 @@
   border: none;
   background-color: transparent;
   fill: #212121;
+  margin-left: auto;
   &:hover,
   &:focus {
     fill: var(--hover-color);
   }
+
   @media screen and (min-width: 768px) {
     display: none;
   }
