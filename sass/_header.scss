@@ -1,6 +1,4 @@
 .header {
-  padding-top: 16px;
-  padding-bottom: 16px;
   @media screen and (min-width: 768px) {
     padding-top: 0;
     padding-bottom: 0;
@@ -20,6 +18,8 @@
   color: var(--default-color);
   font-weight: 700;
   line-height: 1.17;
+  padding-top: 16px;
+  padding-bottom: 16px;
 
   span {
     color: var(--hover-color);
